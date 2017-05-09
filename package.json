@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JaneZhang2/HelloUI/issues"
   },
-  "homepage": "https://github.com/JaneZhang2/HelloUI#readme"
+  "homepage": "https://github.com/JaneZhang2/HelloUI#readme",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
 }
