@@ -22,6 +22,7 @@
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "node-sass": "^4.5.2"
+    "node-sass": "^4.5.2",
+    "webpack": "^2.5.1"
   }
 }
