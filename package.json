@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && mkdir dist && sass src/index.scss dist/index.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/JaneZhang2/HelloUI#readme",
   "dependencies": {
     "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.5.2"
   }
 }
