@@ -10,13 +10,18 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/,
-        include: path.join(__dirname, 'node_modules/normalize.css'),
-        use: ExtractTextPlugin.extract(['css-loader'])
-      }
+        test: /normalize\.scss$/,
+        // include: path.join(__dirname, 'node_modules/normalize.css'),
+        use: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+      },
+      // {
+      //   test: /\.css$/,
+      //   include: path.join(__dirname, 'node_modules/normalize.css'),
+      //   use: ExtractTextPlugin.extract(['css-loader'])
+      // }
     ]
   },
   plugins: [
-    new ExtractTextPlugin({filename: 'normalize.scss'})
+    new ExtractTextPlugin({filename: '[name].scss'})
   ]
 };
